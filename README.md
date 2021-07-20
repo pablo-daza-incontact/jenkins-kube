@@ -1,6 +1,7 @@
 # Use Docker installed in WSL 2 or change the paths of volume
 
 ## Step 1 (Simple deployment internal)
+Create C:\jenkins folder to persist the data
 ```bash
 kubectl create namespace jenkins
 kubectl apply -f jenkins-volume-manual.yaml
