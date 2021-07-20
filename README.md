@@ -1,4 +1,4 @@
-#Use Docker installed in WSL 2 or change the paths of volume
+# Use Docker installed in WSL 2 or change the paths of volume
 
 ## Step 1
 #### Install Helm in the folder you want
