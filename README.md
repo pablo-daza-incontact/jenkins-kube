@@ -8,6 +8,8 @@ kubectl apply -f jenkins-volume-manual.yaml
 kubectl apply -f jenkins-volume-claim.yaml
 kubectl apply -f jenkins-sa.yaml
 kubectl create -f jenkins.yaml --namespace jenkins
+kubectl create -f jenkins-service.yaml --namespace jenkins
+kubectl get services --namespace jenkins
 ```
 
 Use the following commands to see the password key
