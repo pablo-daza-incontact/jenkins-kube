@@ -8,7 +8,7 @@ kubectl apply -f jenkins-volume-claim.yaml
 kubectl apply -f jenkins-sa.yaml
 kubectl create -f jenkins.yaml --namespace jenkins
 ```
-## Step 1
+## Step 1 (Advanced not necessary if you followed the simple deployment)
 #### Install Helm in the folder you want
 ```shell
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
