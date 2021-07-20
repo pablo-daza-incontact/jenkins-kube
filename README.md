@@ -35,8 +35,8 @@ kubectl logs -n jenkins jenkins-0 -c init
 The volume for some reason does not have the correct permissions 
 And set
 ```shell
-chown 1000:1000 /data/jenkins-volume
-chmod 775 /data/jenkins-volume
+chown 1000:1000 /mnt/c/jenkins
+chmod 775 /mnt/c/jenkins
 ```
 
 
