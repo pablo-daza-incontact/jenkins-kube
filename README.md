@@ -9,6 +9,11 @@ kubectl apply -f jenkins-volume-claim.yaml
 kubectl apply -f jenkins-sa.yaml
 kubectl create -f jenkins.yaml --namespace jenkins
 ```
+
+Use the following commands to see the password key
+kubectl get pods -n jenkins
+kubectl logs jenkins-xxxxxxxxx -n jenkins
+
 ## Step 1 (Advanced not necessary if you followed the simple deployment)
 #### Install Helm in the folder you want
 ```shell
