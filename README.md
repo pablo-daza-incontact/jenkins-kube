@@ -1,5 +1,13 @@
 # Use Docker installed in WSL 2 or change the paths of volume
 
+## Step 1 (Simple deployment internal)
+```bash
+kubectl create namespace jenkins
+kubectl apply -f jenkins-volume-manual.yaml
+kubectl apply -f jenkins-volume-claim.yaml
+kubectl apply -f jenkins-sa.yaml
+kubectl create -f jenkins.yaml --namespace jenkins
+```
 ## Step 1
 #### Install Helm in the folder you want
 ```shell
